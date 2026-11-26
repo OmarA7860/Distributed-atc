@@ -1,0 +1,37 @@
+{
+  "allocator": { "host": "localhost", "routerPort": 5555, "pubPort": 5556 },
+  "timing": {
+    "slotSeconds": 60,
+    "bufferSeconds": 30,
+    "waitThresholdSeconds": 300,
+    "receiveTimeoutMs": 30000,
+    "heartbeatMs": 1000,
+    "timeScale": 1
+  },
+  "airports": [
+    {
+      "id": "YYZ",
+      "controlRouterPort": 5560, "positionSubPort": 5561, "eventPubPort": 5562,
+      "aircraftCount": 7,
+      "taxiways": ["YYZ-A", "YYZ-B", "YYZ-C", "YYZ-D"],
+      "runways": [
+        { "id": "YYZ-05/23", "lengthM": 3389 },
+        { "id": "YYZ-06L/24R", "lengthM": 2956 },
+        { "id": "YYZ-06R/24L", "lengthM": 2743 },
+        { "id": "YYZ-15L/33R", "lengthM": 3368 },
+        { "id": "YYZ-15R/33L", "lengthM": 2770 }
+      ]
+    },
+    {
+      "id": "YOW",
+      "controlRouterPort": 5570, "positionSubPort": 5571, "eventPubPort": 5572,
+      "aircraftCount": 7,
+      "taxiways": ["YOW-A", "YOW-B", "YOW-C", "YOW-D"],
+      "runways": [
+        { "id": "YOW-14/32", "lengthM": 3049 },
+        { "id": "YOW-07/25", "lengthM": 2438 },
+        { "id": "YOW-04/22", "lengthM": 1600, "maxSizeClass": "SMALL" }
+      ]
+    }
+  ]
+}
